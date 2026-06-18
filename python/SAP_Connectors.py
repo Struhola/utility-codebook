@@ -97,6 +97,7 @@ def GetSessions():
     #     #raise Exception ("Session left on login window, restarting and logging in.")
     # elif not GetSession:
     #     raise Exception ("No Connection found")
+    # TEST
 
     return (Dict_SAP_Free_Connections
             #, Exit_Message
