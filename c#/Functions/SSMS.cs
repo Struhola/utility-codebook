@@ -6,8 +6,8 @@ public class SSMS
    public static void Start()
     {
         string Path_SSMS = @"C:\\Program Files\Microsoft SQL Server Management Studio 22\Release\Common7\IDE\SSMS.exe";
-        string Path_Script = @"C:\Users\vne8725\OneDrive - Westinghouse Electric Company LLC\Documents\SQL Server Management Studio 22\Daily_Table_Refresh_Status_vne8725.sql";
-        string Args_SSMS = $"-S SCRWPDSFIN01 -d Business_Reporting -C -nosplash \"{Path_Script}\"";
+        string Path_Script = @"";
+        string Args_SSMS = $"-S [server] -d [db] -C -nosplash \"{Path_Script}\"";
         Console.WriteLine($"Logging into SSMS.");
 
         try

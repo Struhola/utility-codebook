@@ -11,7 +11,7 @@ public class VSC
         Process proc = System.Diagnostics.Process.Start(new ProcessStartInfo 
         {
             FileName = "cmd.exe",
-            Arguments = "/c start \"\" \"C:\\Users\\vne8725\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+            Arguments = "/c start \"\" \"C:\\Users\\[USER]\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
             UseShellExecute = true,
             CreateNoWindow = false
             // WindowStyle = ProcessWindowStyle.Hidden
@@ -26,19 +26,7 @@ public class VSC
             proc.Refresh();
         }
         //App.Wait_To_Be_ready(proc);
-        
 
-        // Process? proc = System.Diagnostics.Process.Start(new ProcessStartInfo 
-        // {
-        //     FileName = @"C:\Users\vne8725\AppData\Local\Programs\Microsoft VS Code\Code.exe",
-        //     UseShellExecute = true,
-        //     CreateNoWindow = false
-        //     // WindowStyle = ProcessWindowStyle.Hidden
-        // });
-        
-        // App.Wait_To_Be_ready(proc);
-        // proc.Close();
-    //proc.Dispose();
     }
 }
 
